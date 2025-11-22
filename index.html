@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +8,14 @@
 </head>
 <body>
     <div class="hamburger" onclick="abremenu()">☰</div>
-    <div class="menu" id="mainmenu">
+    <nav class="menu" id="mainmenu">
         <a href="#">Inicio</a>
         <a href="#">Sobre</a>
         <a href="#">Contato</a>
-    </div>
+    </nav>
 
-    <div class="container">
-        <div class="box">
-            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
-            <p>asd</p>
-        </div>
-        <div class="box">
-            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
-            <p>asd</p>
-        </div>
-        <div class="box">
-            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
-            <p>asd</p>
-        </div>
-    </div>
+    <main class="container" id="content"></main>
     
 </body>
-<script>
-    function abremenu(){
-        const menu = document.getElementById('mainmenu');
-        menu.classList.toggle('show');
-    }
-</script>
+<script src="js/main.js"></script>
 </html>
