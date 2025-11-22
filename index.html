@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/flex.css">
+</head>
+<body>
+    <div class="hamburger" onclick="abremenu()">☰</div>
+    <div class="menu" id="mainmenu">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
+            <p>asd</p>
+        </div>
+        <div class="box">
+            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
+            <p>asd</p>
+        </div>
+        <div class="box">
+            <img class="img-res" src="https://media.tenor.com/bSWLeuXHiCwAAAAe/galo-sniper-galo.png" alt="">
+            <p>asd</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function abremenu(){
+        const menu = document.getElementById('mainmenu');
+        menu.classList.toggle('show');
+    }
+</script>
+</html>
