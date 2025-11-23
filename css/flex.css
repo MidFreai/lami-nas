@@ -2,6 +2,7 @@
     display: flex;
     background-color: #333;
     padding: 10px;
+    border-radius: 10px;
     a{
         color: #fff;
         padding: 10px;
@@ -48,7 +49,7 @@
     display: block;
 }
 .filtro{
-    margin: 2vh;
+    margin: 1vh;
 }
 
 @media(max-width:600px){

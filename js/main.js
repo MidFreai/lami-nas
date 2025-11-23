@@ -1,3 +1,7 @@
+let produtos = [];
+const lista = document.getElementById("content");
+
+
 function abremenu(){
     const menu = document.getElementById('mainmenu');
     menu.classList.toggle('show');
@@ -8,16 +12,23 @@ function abrefiltro(){
     ordem.classList.toggle('show');
 }
 
-let produtos = [];
-const lista = document.getElementById("content");
+function nav() {
+    document.getElementById("mainmenu").innerHTML = `
+        <a href="index.html">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    `;
+}
 
-fetch("js/db.json")
-.then(resposta => resposta.json()) //ver se a resposta e do tipo q quero
-.then(data => { // e ai eu pego o resultado
-    produtos = data
-    mostar(produtos);
-})
-.catch(err => console.error("erro ao carregar json", err));
+function jsonFetch(){
+    fetch("js/db.json")
+    .then(resposta => resposta.json()) //ver se a resposta e do tipo q quero
+    .then(data => { // e ai eu pego o resultado
+        produtos = data
+        mostar(produtos);
+    })
+    .catch(err => console.error("erro ao carregar json", err));
+}
 
 
 function mostar(prod){
@@ -53,3 +64,6 @@ function ordem(tipo) {
 
     mostar(ord);
 }
+
+nav();
+jsonFetch();
