@@ -1,5 +1,11 @@
 [
-    {"id": 0, "nome": "MOLETOM PRETO - SEXTA DO MEDO", "img": "img/sexta_do_medo.webp", "preco": "1"},
-    {"id": 1, "nome": "Oleo de motor", "img": "img/oleo_mobil_super.jpg", "preco": "2"},
-    {"id": 2, "nome": "Galo sniper", "img": "img/galo-sniper-galo.gif", "preco": "2.2"}
+    {"id": 0, "nome": "Pivo Inferior Corsa 1.6", "img": "img/pivo_inferior_corsa_1_0_1994_a_1998_corsa_1_4_1994_a_1997_corsa_1_6_1995_a_1998_ld_e_le_8407_1_20190618164049.webp", "preco": "38.00"},
+    {"id": 1, "nome": "Oleo de motor", "img": "img/oleo_mobil_super.jpg", "preco": "30.00"},
+    {"id": 2, "nome": "junta homocinetica gm onix", "img": "img/junta_homocinetica_gm_onix_1_0_33x21_1471_1_1cf56e7c324dbd5965b877020c81db32.jpg", "preco": "180.00"},
+    {"id": 3, "nome": "Vidro Parabrisa Volkswagen Fusca 1940 a 1996", "img": "img/parabrisa_volkswagen_fusca_1940_a_1996_fanavid_14883_1_e1ad8eae2a5c4c60164798178da61e1c.webp", "preco": "200.00"},
+    {"id": 4, "nome": "Lanterna Traseira Ford Ka 2009 a 2013", "img": "img/lanterna_ka_09_12_3159_2_20230522123702.webp", "preco": "120.00"},
+    {"id": 5, "nome": "Cabo Freio De Mao Traseiro Gol Quadrado 86 A 94", "img": "img/shopping.webp", "preco": "132.00"},
+    {"id": 6, "nome": "Paralama Dianteiro T-cross 2019 2020 2021", "img": "img/D_NQ_NP_2X_914330-MLB92698012677_092025-F-paralama-dianteiro-t-cross-2019-2020-2021.webp", "preco": "561.00"},
+    {"id": 7, "nome": "Parachoque dianteiro fiat uno 2006 a 2013", "img": "img/parachoque_dianteiro_uno_fiorino_06_ate_13_preto_324_1_aa1488ca4a491ece82d72ce16480c76b.webp", "preco": "152.00"},
+    {"id": 8, "nome": "Cabo Trambulador Ford Ka 1.0 2010 2011", "img": "img/1412a0397b3f1d1dd1bcbaf318c1a295.webp", "preco": "268.00"}
 ]

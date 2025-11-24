@@ -1,15 +1,34 @@
-.menu{
+body{
+    background: white;
+}
+.menu {
     display: flex;
     background-color: #333;
     padding: 10px;
     border-radius: 10px;
-    a{
+
+    a {
         color: #fff;
         padding: 10px;
         text-decoration: none;
     }
+
 }
-.hamburger{
+
+a{
+    text-decoration: none;
+}
+
+#logo {
+   width: 50px;
+    border-radius: 20px;
+    display: block;
+    position: absolute;  
+    top: 13px;
+    right: 20px;;
+}
+
+.hamburger {
     display: none;
     font-size: 30px;
     color: #fff;
@@ -17,60 +36,90 @@
     padding: 10px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
-    gap:1vh;
+    gap: 1vh;
     flex-wrap: wrap;
 }
 
-.box{
+.box {
     flex: calc(33% - 5px);
-    background-color: #eee;
-    color:#fff;
+    background: rgb(31, 31, 31);
+    color: #fff;
     text-align: center;
     width: 33vw;
-}
-.box h2{
-    color: #000;
+    box-shadow: 2px 2px 15px 0px rgb(0, 0, 0);
 }
 
+.box h2 {
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+}
 
-.img-res{
+.img-res {
     border-radius: 10px;
     width: 95%;
     margin-top: 2vh;
+    transition: 0.8s;
 }
 
-.ordem{
+.img-res:hover {
+    transform: scale(1.02);
+}
+
+.ordem {
     display: none;
 }
-.ordem.show{
+
+.ordem.show {
     display: block;
 }
-.filtro{
-    margin: 1vh;
+
+.filtro {
+    margin: 0.2vh;
 }
 
-@media(max-width:600px){
-    .container{
+@media(max-width:600px) {
+    .container {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .box{
+
+    #logo {
+        display: none;
+    }
+
+    .box {
         flex: 1;
         width: 100%;
     }
-    .menu{
+
+    .menu {
         display: none;
+
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
+        border-radius: 5px;
     }
-    .menu.show{
+    .menu.show {
         display: flex;
     }
-    .img-res{
-        width: 100%;
+
+    .img-res {
+        width: 90%;
+
     }
+    #log{
+        width: 50px;
+        border-radius: 20px;
+        display: block;
+        position: absolute;  
+        top: 13px;
+        right: 20px;
+    }
+
 }
