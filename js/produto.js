@@ -11,19 +11,20 @@ async function getById(){
 }
 
 function drawProduto(prod){
-    let div = document.getElementById("prod");
-    div.innerHTML = `
-        <article class="box">
+    let main = document.getElementById("prod");
+    main.innerHTML = `
+        <article class="info">
             <img class="img-res" src="${prod.img}">
-            <h2>${prod.nome} <br> <br>R$:${prod.preco}</h2>
+            <h2>${prod.nome}<br><br>R$:${prod.preco}</h2>
         </article>
     `;
 }
 
-async function run(){
+async function runIdDraw(){
     let produto = await getById();
     console.log(produto);
     drawProduto(produto);
+    docTitle(produto.nome);
 }
 
-run();
+runIdDraw();

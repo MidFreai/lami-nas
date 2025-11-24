@@ -1,6 +1,11 @@
 body{
     background: white;
 }
+
+a{
+    text-decoration: none;
+}
+
 .menu {
     display: flex;
     background-color: #333;
@@ -14,9 +19,22 @@ body{
     }
 
 }
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+}
 
-a{
-    text-decoration: none;
+.img-res {
+    border-radius: 10px;
+    width: 95%;
+    margin-top: 2vh;
+    transition: 0.8s;
+}
+.img-res:hover {
+    transform: scale(1.02);
 }
 
 #logo {
@@ -28,79 +46,11 @@ a{
     right: 20px;;
 }
 
-.hamburger {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    background-color: #333;
-    padding: 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    gap: 1vh;
-    flex-wrap: wrap;
-}
-
-.box {
-    flex: calc(33% - 5px);
-    background: rgb(31, 31, 31);
-    color: #fff;
-    text-align: center;
-    width: 33vw;
-    box-shadow: 2px 2px 15px 0px rgb(0, 0, 0);
-}
-
-.box h2 {
-    color: #ffffff;
-    text-align: left;
-    padding: 20px;
-}
-
-.img-res {
-    border-radius: 10px;
-    width: 95%;
-    margin-top: 2vh;
-    transition: 0.8s;
-}
-
-.img-res:hover {
-    transform: scale(1.02);
-}
-
-.ordem {
-    display: none;
-}
-
-.ordem.show {
-    display: block;
-}
-
-.filtro {
-    margin: 0.2vh;
-}
-
 @media(max-width:600px) {
-    .container {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    #logo {
-        display: none;
-    }
-
-    .box {
-        flex: 1;
-        width: 100%;
-    }
-
     .menu {
         display: none;
 
     }
-
     .hamburger {
         display: block;
         border-radius: 5px;
@@ -113,6 +63,11 @@ a{
         width: 90%;
 
     }
+    
+    #logo {
+        display: none;
+    }
+
     #log{
         width: 50px;
         border-radius: 20px;
@@ -121,5 +76,4 @@ a{
         top: 13px;
         right: 20px;
     }
-
 }
