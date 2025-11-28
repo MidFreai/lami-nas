@@ -25,6 +25,7 @@ a{
     color: #fff;
     background-color: #333;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .img-res {
@@ -66,14 +67,5 @@ a{
     
     #logo {
         display: none;
-    }
-
-    #log{
-        width: 50px;
-        border-radius: 20px;
-        display: block;
-        position: absolute;  
-        top: 13px;
-        right: 20px;
     }
 }

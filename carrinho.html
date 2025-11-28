@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/flex.css">
-    <link rel="stylesheet" href="css/produto.css">
-    <title>Produto</title>
+    <title>Carrinho</title>
 </head>
 <body>
     <div class="hamburger" onclick="abremenu()">☰</div>
     <nav class="menu" id="mainmenu"></nav>
 
-    <main id="prod"></main>
-
-    <button class="Carrinho" onclick="addCarrinho()">Carrinho</button>
+    <div id="lista"></div>
     
 </body>
 <script src="js/main.js"></script>
-<script src="js/produto.js"></script>
 <script src="js/carrinho.js"></script>
+<script>
+    drawLista();
+</script>
 </html>

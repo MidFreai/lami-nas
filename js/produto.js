@@ -1,6 +1,5 @@
-const id = new URLSearchParams(location.search).get("id");
-
 async function getById(){
+    const id = new URLSearchParams(location.search).get("id");
     const r = await fetch("js/db.json");
     const prod = await r.json();
     for(let i=0;i<prod.length;i++){
@@ -22,7 +21,6 @@ function drawProduto(prod){
 
 async function runIdDraw(){
     let produto = await getById();
-    console.log(produto);
     drawProduto(produto);
     docTitle(produto.nome);
 }
