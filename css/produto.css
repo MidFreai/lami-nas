@@ -3,16 +3,34 @@
     flex-direction: row;
 }
 .img-res{
-    flex: 1;
+    flex: flex;
+    width: 40vw;
 }
 .info h2{
     flex: 0.9;
-    text-align: center;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 220px;
+    color: rgb(255, 255, 255);
 }
 
-@media(max-width:600){
+body{
+background-color: rgb(77, 77, 77);
+}
+
+@media(max-width:600px){
     .info{
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .img-res{
+    flex: 1;
+    width: 90vw;
+}
+.info h2{
+    flex: 0.9;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
 }

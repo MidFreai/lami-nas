@@ -1,11 +1,12 @@
 let produtos = [];
+
 const lista = document.getElementById("content");
 
 
 function jsonFetch() {
     fetch("js/db.json")
-        .then(resposta => resposta.json()) //ver se a resposta e do tipo q quero
-        .then(data => { // e ai eu pego o resultado
+        .then(resposta => resposta.json())
+        .then(data => {
             produtos = data
             mostar(produtos);
         })
@@ -47,5 +48,6 @@ function ordem(tipo) {
 
     mostar(ord);
 }
+
 
 jsonFetch();

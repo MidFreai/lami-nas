@@ -22,9 +22,7 @@ function drawProduto(prod){
 
 async function runIdDraw(){
     let produto = await getById();
-    console.log(produto);
     drawProduto(produto);
     docTitle(produto.nome);
 }
-
 runIdDraw();

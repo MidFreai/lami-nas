@@ -14,6 +14,7 @@ function nav() {
         <a href="index.html">Inicio</a>
         <a href="#">Sobre</a>
         <a href="#">Contato</a>
+        <a href="carrinho.html">Carrinho</a>
     `;
 }
 
