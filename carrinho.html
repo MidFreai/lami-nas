@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,25 @@
     <link rel="stylesheet" href="css/carrinho.css">
     <link rel="stylesheet" href="css/flex.css">
 </head>
+
 <body>
     <div class="hamburger" onclick="abremenu()">☰</div>
     <nav class="menu" id="mainmenu"></nav>
 
     <br>
-
-    <button class="btn2" onclick="esvasiarCarrinho()">
-        <a><img src="img/clear.png"></a>
-    </button>
-
     <main class="car">
         <section id="lista"></section>
         <section class="sec2">
             <div id="preco"></div>
             <div id="btncompra">
                 Comprar
+                <button class="btn2" onclick="esvasiarCarrinho()">
+                    <a><img src="img/clear.png"></a>
+                </button>
             </div>
         </section>
     </main>
-    
+
 </body>
 <script src="js/carrinho.js"></script>
 <script src="js/main.js"></script>
@@ -34,4 +34,5 @@
     drawLista();
     printPrice();
 </script>
+
 </html>

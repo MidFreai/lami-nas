@@ -10,7 +10,7 @@ function esvasiarCarrinho(){
     localStorage.clear("carrinho");
 
     document.getElementById("lista").innerHTML = `
-        O Carrinho esta vazio
+        <h3 style="color:white">O Carrinho esta vazio<h3>
     `;
 
     printPrice()
