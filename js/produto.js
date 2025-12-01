@@ -1,6 +1,5 @@
-const id = new URLSearchParams(location.search).get("id");
-
 async function getById(){
+    const id = new URLSearchParams(location.search).get("id");
     const r = await fetch("js/db.json");
     const prod = await r.json();
     for(let i=0;i<prod.length;i++){
