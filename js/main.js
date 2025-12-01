@@ -11,10 +11,12 @@ function abrefiltro() {
 function nav() {
     document.getElementById("mainmenu").innerHTML = `
     <img id="logo" src="img/Gemini_Generated_Image_yytg6vyytg6vyytg.png">
-        <a href="index.html">Inicio</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="carrinho.html">Carrinho</a>
+        <a class="btn" id="home" href="index.html">
+            <img src="img/home.png">
+        </a>
+        <a class="btn" href="carrinho.html">
+            <img src="img/download.svg">
+        </a>
     `;
 }
 

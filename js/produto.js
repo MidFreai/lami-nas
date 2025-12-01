@@ -15,7 +15,11 @@ function drawProduto(prod){
     main.innerHTML = `
         <article class="info">
             <img class="img-res" src="${prod.img}">
-            <h2>${prod.nome}<br><br>R$:${prod.preco}</h2>
+            <h2>${prod.nome}<br><br>R$:${prod.preco}
+                <button class="Carrinho" onclick="addCarrinho()">
+                    <a><img src="img/download.svg"></a>
+                </button>
+            </h2>
         </article>
     `;
 }

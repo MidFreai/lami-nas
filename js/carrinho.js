@@ -8,6 +8,8 @@ function addCarrinho(){
 
 function esvasiarCarrinho(){
     localStorage.clear("carrinho");
+
+    document.getElementById("lista").innerHTML = "";
 }
 
 
@@ -26,7 +28,7 @@ async function drawLista(){
                     <article class="box">
                         <a href="produto.html?id=${prod[i].id}">
                             <img class="img-res" src="${prod[i].img}">
-                            <h2>${prod[i].nome} <br> <br>R$:${prod[i].preco}</h2>
+                            <h2>${prod[i].nome} <br> <br>R$:${prod[i].preco}<br><br><br></h2>
                         </a>
                     </article>
                 `;

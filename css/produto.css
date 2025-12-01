@@ -4,12 +4,12 @@
 }
 .img-res{
     flex: flex;
-    width: 40vw;
+    width: 35vw;
 }
 .info h2{
     flex: 0.9;
     text-align: left;
-    margin-left: 200px;
+    margin-left: 7vw;
     margin-top: 220px;
     color: rgb(255, 255, 255);
 }
@@ -17,7 +17,19 @@
 body{
 background-color: rgb(77, 77, 77);
 }
-
+.info .Carrinho{
+    margin-left: 18vw;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 77, 77);
+    border: none;
+}
+.info .Carrinho a img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    filter: invert(1);
+}
 @media(max-width:600px){
     .info{
         flex-direction: column;

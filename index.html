@@ -10,7 +10,10 @@
 <body>
     <div class="hamburger" onclick="abremenu()">☰</div>
     <nav class="menu" id="mainmenu"></nav>
-    <button class="filtro" onclick="abrefiltro()" >Ordenar por</button>
+
+    <button class="filtro" onclick="abrefiltro()"> 
+        <a><img src="img/filter.png"></a> 
+    </button>
     <div class="ordem" id="ordem">
         <button onclick="ordem('az')">Nome A–Z</button>
         <button onclick="ordem('za')">Nome Z–A</button>
@@ -20,7 +23,6 @@
     
     <main class="container" id="content"></main>
 
-    
 </body>
 <script src="js/main.js"></script>
 <script src="js/index.js"></script>

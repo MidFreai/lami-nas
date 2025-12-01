@@ -7,22 +7,24 @@
 
 .box {
     flex: calc(33% - 25px);
-    background: rgb(31, 31, 31);
+    background: #333;
     color: #fff;
     text-align: center;
-    width: 33vw;
-    margin: 10px;
+    margin: 5px;
     box-shadow: 2px 2px 15px 0px rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: 10px;
 }
+
 .box h2 {
-    color: #ffffff;
+    color: #fff;
     text-align: left;
     padding: 10px;
 }
 
+
 .ordem {
     display: none;
+    margin-bottom: 10px;
 }
 .ordem.show {
     display: block;
@@ -31,12 +33,16 @@
 .filtro {
     margin: 0.2vh;
     margin-top: 10px;
+    background-color: #888888;
+    border: none;
+
+}
+.filtro img{
+    width: 24px;
+    height: 24px;
 }
 body{
-    background-image:url(../img/Gemini_Generated_Image_lj4yv3lj4yv3lj4y.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #888888;
 }
 
 @media(max-width:600px) {
