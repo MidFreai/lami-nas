@@ -14,15 +14,24 @@
     <br>
 
     <button class="btn2" onclick="esvasiarCarrinho()">
-        <a><img src="/img/clear.png"></a>
+        <a><img src="img/clear.png"></a>
     </button>
 
-    <main id="lista"></main>
+    <main class="car">
+        <section id="lista"></section>
+        <section class="sec2">
+            <div id="preco"></div>
+            <div id="btncompra">
+                Comprar
+            </div>
+        </section>
+    </main>
     
 </body>
 <script src="js/carrinho.js"></script>
 <script src="js/main.js"></script>
 <script>
     drawLista();
+    printPrice();
 </script>
 </html>
